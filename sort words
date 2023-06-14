@@ -1,0 +1,21 @@
+import java.util.Scanner;
+import java.util.Arrays;
+public class main{
+    public static void main(String[] args)
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.println("enter no of words");
+        int n=s.nextInt();
+        System.out.println("enter the words");
+        String c[]=new String[n];
+        for(int i=0;i<n;i++)
+        {
+            c[i]=s.nextLine();
+        }
+        Arrays.sort(c);
+        for(int i=0;i<n;i++)
+        {
+            System.out.println(c[i]);
+        }
+    }
+}
