@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class main{
+    public static void main(String []args)
+    {
+        int i,j,k=0,r;
+        Scanner s=new Scanner(System.in);
+        System.out.println("enter no of rows");
+        r=s.nextInt();
+        for(i=1;i<=r;i++,k=0)
+        {
+            for(j=1;j<=r-1;j++)
+            {
+                System.out.print(" ");
+            }
+            while(k!=2*i-1)
+            {
+                System.out.print("*");
+                k++;
+            }
+            System.out.println();
+            
+        }
+    }
+}
