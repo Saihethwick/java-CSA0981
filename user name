@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class main{
+    public static void main(String[]args)
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.println("enter the username");
+        String a=s.nextLine();
+        System.out.println("reenter the username");
+        String b=s.nextLine();
+        if(a.equals(b))
+        {
+            System.out.println("Vaild");
+        }
+        else
+        {
+            System.out.println("inVaild");
+        }
+    }
+}
